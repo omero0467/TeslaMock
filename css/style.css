@@ -31,6 +31,7 @@ a {
   padding: 0;
   margin: 0;
   text-decoration: none;
+  --h1size:1.6rem;
 }
 
 p {
@@ -42,7 +43,7 @@ html {
 }
 
 body {
-  font-family: gotham-light;
+  font-family: gotham-book;
   overflow-x: hidden;
   min-height: 160vh;
   color: white;
@@ -80,10 +81,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.75rem;
+  padding:  .75rem ;
 }
 
-.navbar li {
+.navbar li{
   /* margin-top: 2%; */
   padding: 8px;
   display: inline-block;
@@ -91,14 +92,14 @@ header {
 
 .navbar li a {
   color: white;
-  padding: 0.2rem 0.2rem;
-  border-radius: 10%;
-  /* margin: .2rem; */
+  padding: 0.5rem 1rem;
+  border-radius: .2rem;
 }
 
 .navbar li a:hover {
-  background: rgba(191, 191, 191, 0.5);
+  background: rgba(76, 76, 76, 0.662);
   backdrop-filter: blur(10px);
+
 }
 
 .model3 {
@@ -272,3 +273,75 @@ header {
   font-size: em;
   font-family: gotham-book;
 } */
+
+.genericsec {
+  height: 100vh;
+}
+
+.snowpic {
+  height: 80vh;
+  background: url(/images/Model-3-Performance-Hero-Desktop-LHD.jpeg) no-repeat center center/cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+.text-container{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5rem;
+  line-height: 1.2rem;
+}
+
+.text-container p{
+  font-size: 12px;
+  padding: .5rem 1.2rem 0;
+  padding-top: .5rem;
+  white-space: pre-wrap;
+  font-family: gotham-xlight;
+  /* word-spacing: .01rem ; */
+  letter-spacing: .01rem;
+
+}
+
+.text-container h1 {
+  font-family: gotham-book ;
+  font-weight: 300;
+  font-size: var(--h1size);
+}
+.container1{
+  height: 20vh;
+  /* display: flex; */
+}
+
+.textbox2 h1, .textbox3 h1{
+  letter-spacing: -.04rem;
+}
+.textbox1 h1{
+  letter-spacing: .4rem;
+}
+
+.container2{
+  width: 80%;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+/* .container3{
+  padding: rem;
+} */
+.container4{
+  font-family: gotham-light;
+  font-size: 14px;
+}
+
+.bluepic {
+  background: url(/images/Model-3-AWD-Hero-Desktop-LHD.jpeg) no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
