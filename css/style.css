@@ -1,0 +1,212 @@
+@font-face {
+  font-family: gotham-light;
+  src: url(../Fonts/GothamSSm-Light_Web.otf);
+}
+@font-face {
+  font-family: gotham-med;
+  src: url(../Fonts/GothamSSm-Medium_Web.otf);
+}
+@font-face {
+  font-family: gotham-bold;
+  src: url(../Fonts/GothamSSm-Bold_Web.otf);
+}
+@font-face {
+  font-family: gotham-xlight;
+  src: url(../Fonts/GothamSSm-XLight_Web.otf);
+}
+@font-face {
+  font-family: gotham-book;
+  src: url(../Fonts/GothamSSm-Book_Web.otf);
+}
+
+*,
+ul,
+a {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+p {
+  max-width: 30em;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: gotham-light;
+  overflow-x: hidden;
+  min-height: 160vh;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Header ------------------ */
+
+header {
+  height: 100vh;
+  min-height: 40em;
+  background: url(../images/Model-3-Main-Hero-Desktop-LHD.jpeg) no-repeat center
+    center/cover;
+  font-size: 14px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(8, 8vw);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.brand {
+  line-height: 2rem;
+  padding: 8px;
+  width: 6em;
+  margin-left: 48px;
+  margin-top: 2%;
+}
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+}
+.navbar li {
+  /* margin-top: 2%; */
+  padding: 8px;
+  display: inline-block;
+}
+.navbar li a {
+  color: white;
+  padding: 0.2rem 0.2rem;
+  border-radius: 10%;
+  /* margin: .2rem; */
+}
+.navbar li a:hover {
+  background: rgba(191, 191, 191, 0.5);
+  backdrop-filter: blur(10px);
+}
+.model3 {
+  font-family: gotham-book;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  height: 37vh;
+  align-items: center;
+  padding: 0.5rem;
+  text-align: center;
+  grid-column: 4 / span 2;
+}
+
+.car-container {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 6;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 1rem;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+/* .car-container *div {
+  padding: ;
+} */
+.speed {
+  letter-spacing: 0.4rem;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+.speed p {
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 0.4rem;
+}
+.miles p {
+  font-size: 12px;
+  letter-spacing: 0;
+  padding: 0.4rem;
+}
+.miles .nums {
+  letter-spacing: 0.1rem;
+}
+.miles {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.motor {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+}
+.motor p {
+  font-size: 12px;
+  padding: 0.4rem;
+}
+
+.btn {
+  /* border: 1px solid white; */
+  font-size: 14px;
+  text-align: center;
+  grid-row: 3 / span 1;
+  grid-column: 4 / span 2;
+  padding: 1rem;
+}
+
+.btn-light {
+  padding: 10px 4vw;
+  border: 3px solid white;
+  border-radius: 0.2rem;
+}
+
+.speedometer {
+  height: 3vh;
+  max-width: 40px;
+  position: absolute;
+}
+.speedometer .part1,
+.part2 .part3 {
+  position: absolute;
+}
+.part1 {
+  bottom: 0;
+  left: 0;
+}
+
+.part3 {
+  width: 15%;
+  transform: rotate(90deg);
+}
+.part2 {
+  display: flexbox;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  width: 100%;
+  bottom: 0;
+}
+.section2 {
+  display: flex;
+  color: black;
+}
+.skeleton img {
+  width: 80vw;
+}
+
+.description {
+  padding: 3% 0;
+  width: 20%;
+}
+/* .description p {
+} */
+
+.descrioption h1 {
+  font-size: em;
+  font-family: gotham-book;
+}
