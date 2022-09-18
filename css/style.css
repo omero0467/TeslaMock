@@ -33,6 +33,9 @@ a {
   text-decoration: none;
   --h1size:1.6rem;
 }
+a{
+  color: black;
+}
 
 p {
   max-width: 30em;
@@ -40,6 +43,15 @@ p {
 
 html {
   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 body {
@@ -63,12 +75,15 @@ header {
   grid-template-rows: repeat(3, 1fr);
 }
 
-.brand {
+.logo {
   line-height: 2rem;
-  padding: 8px;
-  width: 6em;
+  padding: 0 0.5rem;
+  width: 8.5rem;
   margin-left: 48px;
-  margin-top: 2%;
+  /* margin-top: 2%; */
+}
+.navbar .logo-icon{
+ color: white;
 }
 
 .navbar-wrapper {
@@ -127,6 +142,7 @@ header {
   position: relative;
   text-align: center;
   margin-bottom: 2vh;
+  font-family: gotham-light;
 }
 
 /* .car-container *div {
@@ -212,9 +228,9 @@ header {
   width: 100%;
   bottom: 0;
 }
-
+ /* Section2 ------------------ */
 .section2 {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   color: black;
@@ -222,18 +238,19 @@ header {
 }
 
 .skeleton {
-  height: 100vh;
-}
-
-.skeleton img {
-  width: 78vw;
+  background: url(/images/model-3-hero-a-desktop.jpeg) no-repeat center center/cover;
+  height: 95%;
+  width: 78%;
+  position: relative;
 }
 
 .description {
-  width: min-content;
   padding: 2.4rem;
-  width: 22vw;
-  height: 100vh;
+  width: 22%;
+  /* max-height: 100vh; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .description .heading {
@@ -268,7 +285,16 @@ header {
   padding: .5rem 0;
   /* text-align: ; */
 }
-
+.section-buttons {
+  margin: 1rem 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.text-description {
+  min-width: 336px;
+}
+/* --------------------------- Sections 3, 4 --------------------- */
 /* .descrioption h1 {
   font-size: em;
   font-family: gotham-book;
@@ -279,7 +305,7 @@ header {
 }
 
 .snowpic {
-  height: 80vh;
+  height: 72.5%;
   background: url(/images/Model-3-Performance-Hero-Desktop-LHD.jpeg) no-repeat center center/cover;
   display: flex;
   align-items: flex-end;
@@ -290,7 +316,7 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 5rem;
+  padding:3.625rem 0;
   line-height: 1.2rem;
 }
 
@@ -310,9 +336,18 @@ header {
   font-weight: 300;
   font-size: var(--h1size);
 }
+.bluepic {
+  background: url(/images/Model-3-AWD-Hero-Desktop-LHD.jpeg) no-repeat center center/cover;
+  height: 72.5%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
 .container1{
-  height: 20vh;
-  /* display: flex; */
+  height: 27.5%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .textbox2 h1, .textbox3 h1{
@@ -323,25 +358,230 @@ header {
 }
 
 .container2{
-  width: 80%;
+  width: 58vw;
   color: black;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
+  /* flex-direction: row; */
+  padding: 3rem 0 2.2rem;
 }
 
-/* .container3{
-  padding: rem;
-} */
+.subcontainer2 {
+  width:100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
+.container3 {
+  width:calc(39.5% - 8px);
+  display: flex;
+  flex-direction: column;
+}
+.container3 .heading{
+  padding: 1rem 0 .5rem;
+}
+
+.container3 h1{
+  letter-spacing: -0.06rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.container3 h3 {
+  font-family: gotham-light;
+  font-weight: 400;
+  font-size: 1.06rem;
+}
+
+.container3 .text-footer{
+  display: flex;
+/* justify-content: flex-start; */
+align-items: center;
+flex-direction: row;
+  /* flex-wrap: wrap; */
+  margin:1rem 0;
+  font-size: .875rem;
+
+}
+
+.round-el {
+  height: 40px;
+  width: 40px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 .5rem 0 0;
+  display: block;
+transition: .15s all ease-in-out;
+}
+.round-el:hover{
+color: white;
+background-color: black;
+}
+
+.learn-btn {
+  display: flex;
+  align-items: center;
+  margin-right: .5rem;
+  display: inline-flex;
+}
+
+.btn-dark {
+  width:48%;
+  display: inline-block;
+  padding: .25rem 1.5rem;
+  border: 3px solid black;
+  border-radius: .25rem;
+  transition: .15s all ease-in-out;
+  
+}
+.btn-dark:hover{
+  color: white;
+  background-color: black;
+}
+.btn-dark a>div:hover{
+  color: white;
+}
+
+
+.btn-dark a>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  min-height: 1.625rem;
+}
+
 .container4{
+  width: 60%;
   font-family: gotham-light;
   font-size: 14px;
+  line-height:1.25rem;
 }
 
-.bluepic {
-  background: url(/images/Model-3-AWD-Hero-Desktop-LHD.jpeg) no-repeat center center/cover;
-  height: 80vh;
+.container4>div{
+  font-family: gotham-light;
+  font-weight: 200;
+  padding: 1rem 0;
+}
+
+.sidebar-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  font-size: 24px;
+  width: 1.6rem;
+}
+
+.sidebar-container a{
+  border-left: .5px solid rgb(82, 82, 82);
+  opacity: 1;
+  color: rgba(156, 156, 156, 0.755);
+}
+.sidebar-container .side-navbar-item{
+  margin: 7px;
+}
+
+.sidbar-container a::after {
+  content: attr(tooltip);
+  border: 2px solid white;
+
+}
+
+.btn-light:hover{
+  background: white;
+  color: black;
+  transition: .15s all ease-in-out;
+}
+
+#pin-item1 {
+  border-left: 3px solid #171a20;
+  height: 15.3vh;
+  width: 38.5vw;
+  position: absolute;
+  top: 16vh;
+  left: auto;
+  right: 0;
+}
+
+#pin-item2 {
+  border-left: 3px solid #171a20c5;
+  height: 22vh;
+  width: 52vw;
+  position: absolute;
+  top: 29vh;
+  left: auto;
+  right: 0;
+}
+
+#pin-item3 {
+  border-left: 3px solid #171a20;
+  height: 15.3vh;
+  width: 36vw;
+  position: absolute;
+  top: 59vh;
+  left: auto;
+  right: 0;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+}
+
+p.detail-txt {
+  color: #171a20;
+  font-size: 14px;
+}
+.dot{
+  width: 8px;
+  height: 8px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50%;
+}
+.dot1{
+position: relative;
+top: 100%;
+left: -.7%;
+}
+.dot3{
+position: relative;
+top: 100%;
+left: -.6%;
+}
+.dot2{
+position: relative;
+top: -100%;
+left: -.8%;
+}
+
+.pin {
+  animation: 'pin' 5s ease-in 0.15s single-animation linear fill;
+}
+
+@keyframes pin {
+  0%{
+      transform: scale(0.1)
+  }
+  20% {
+    transform: scale(0.3);
+  }
+  50% {
+      transform: scale(0.6);
+  }
+
+  75% {
+      transform: scale(.9);
+  }
+
+}
+
+.emphasized {
+  border-bottom: 1px solid black ;
 }

@@ -8,49 +8,37 @@
     <title>Tesla</title>
     <link rel="stylesheet" href="Normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
+
 
 <body>
     <div class="header-wrapper">
-        <header>
+        <header id="header">
             <div class="navbar-wrapper">
-                <nav class="navbar">
-                    <h1>
-                        <div class="logo">
+                <nav class="navbar top">
+                    <div class="logo">
+                        <h1>
                             <a href="#">
-                                <img src="/images/logo.png" alt="Tesla logo" class="brand">
-                                </svg>
+                                <svg class="logo-icon" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"><path d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z" fill="currentColor"></path></svg>
                             </a>
-                        </div>
-                    </h1>
-                    <div class="center-nav">
-                        <ul>
-                            <li><a href="#">
-                                    Model S
-                                </a></li>
-                            <li><a href="#">
-                                    Model 3
-                                </a></li>
-                            <li><a href="#">
-                                    Model X
-                                </a></li>
-                            <li><a href="#">
-                                    Model Y
-                                </a></li>
-                            <li><a href="#">
-                                    Solar Roof
-                                </a></li>
-                            <li><a href="#">
-                                    Solar Panels
-                                </a></li>
-                        </ul>
+                        </h1>
                     </div>
-                    <ul>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Menu</a></li>
+                    <ul class="nav">
+                      <li class="nav-item"><a href="#">Model S</a></li>
+                      <li class="nav-item"><a href="#">Model 3</a></li>
+                      <li class="nav-item"><a href="#">Model X</a></li>
+                      <li class="nav-item"><a href="#">Model Y</a></li>
+                      <li class="nav-item"><a href="#">Solar Roof</a></li>
+                      <li class="nav-item"><a href="#">Solar Panels</a></li>
                     </ul>
-                </nav>
+                    <ul class="nav nav--right">
+                      <li class="nav-item"><a href="#">Shop</a></li>
+                      <li class="nav-item"><a href="#">Account</a></li>
+                      <li class="nav-item"><a href="#">Menu</a></li>
+                    </ul>
+                    <a href="#" class="menu-mobile">Menu</a>
+                  </nav>
 
             </div>
             <h1 class="model3">Model 3</h1>
@@ -85,77 +73,163 @@
         </header>
     </div>
 
-    <div class="section2">
-        <div class="skeleton"><img src="/images/model-3-hero-a-desktop.jpeg" alt=""></div>
+    <div id="section2" class="section2">
+        <div class="skeleton">
+            <div class="pin" id="pin-item1"><p class="detail-txt"><div class="dot dot1"></div>Rigid Structure</p></div>
+            <div class="pin" id="pin-item3"><p class="detail-txt"><div class="dot dot2"></div>Very Low Rollover Risk</p></div>
+            <div class="pin" id="pin-item2"><p class="detail-txt"><div class="dot dot3"></div>Impact Protection</p></div>
+        </div>
         <div class="description">
-            <div class="heading">
-                <h3>Saftey</h3>
-                <h1>Built for Saftey</h1>
-            </div>
-            <div class="description-text">
-                <p>
-                    Safety is the most important part of every Tesla. We design our vehicles to exceed safety standards.</p>
-                <p>
-                    <strong>5-Star Rating</strong> <br>
-                    Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory.
-                </p>
-                <p>
-                    <strong>Top Safety Pick+</strong> <br>
-                    Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front
-                    crash prevention categories.</p>
-                    <div class="btn-light"></div>
-                    <div class="round-btn"></div>
+            <div class="text-description">
+                <div class="heading">
+                    <h3>Saftey</h3>
+                    <h1>Built for Saftey</h1>
+                </div>
+                <div class="description-text">
+                    <p>
+                        Safety is the most important part of every Tesla. We design our vehicles to <span class="emphasized">
+                            exceed<br> safety
+                            standards.</p>
+                        </span>
+                    <p>
+                        <strong>5-Star Rating</strong> <br>
+                        Model 3 achieved NHTSA 5-star safety <br> ratings in every category and subcategory.
+                    </p>
+                    <p>
+                        <strong>Top Safety Pick+</strong> <br>
+                        Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and
+                        front
+                        crash prevention categories.
+                    </p>
+                </div>
+                <div class="section-buttons">
+                    <div class="learn-btn">
+                        <div class="round-el"><svg id="tcl-icon-plus--small" viewBox="0 0 30 30"
+                                xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                                <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                                    <line x1="15" y1="10" x2="15" y2="20"></line>
+                                    <line x1="10" y1="15" x2="20" y2="15"></line>
+                                </g>
+                            </svg></div> Learn More
+                    </div>
+                    <div class="btn-dark"><a href="#">
+                            <div>Order Now</div>
+                        </a></div>
+                </div>
             </div>
         </div>
     </div>
-<div class="section3 genericsec">
-    <div class="snowpic">
-        <!-- <img src="/images/Model-3-Performance-Hero-Desktop-LHD.jpeg" alt=""> -->
-        <div class="text-container">
-            <div class="textbox1"><h1>image3.1s</h1>
-        <p>Quickest acceleration—from zero to 60 
-mph* in as little as 3.1 seconds</p></div>
-            <div class="textbox2"><h1>162 mph</h1><p>Improved handling and aerodynamics
-allow for a top speed of 162 mph</p></div>
-            <div class="textbox3"><h1>AWD</h1><p>Dual Motor All-Wheel Drive instantly 
-controls traction and torque, in all weather 
-conditions</p></div>
-        </div>
-    </div>
-    <div class="container1">
-        <div class="container2">
-            <div class="container3"><div class="heading"><h3>Preformance</h3><h1>Quickest Acceleration</h1></div>
-                <div class="round-btn">Learn More</div>
-                <div class="btn-dark">Order Now</div>
+
+
+    <div id="section3" class="genericsec">
+        <div class="snowpic">
+            <div class="text-container">
+                <div class="textbox1">
+                    <h1>image3.1s</h1>
+                    <p>Quickest acceleration—from zero to 60
+mph* in as little as 3.1 seconds</p>
+                </div>
+                <div class="textbox2">
+                    <h1>162 mph</h1>
+                    <p>Improved handling and aerodynamics
+allow for a top speed of 162 mph</p>
+                </div>
+                <div class="textbox3">
+                    <h1>AWD</h1>
+                    <p>Dual Motor All-Wheel Drive instantly
+controls traction and torque, in all weather
+conditions</p>
+                </div>
             </div>
-            <div class="container4"><p>Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes for total control in all weather conditions. A carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</p></div>
-    </div>
-    </div>
-</div>
-
-<div class="section4 genericsec">
-    <div class="bluepic">
-        <div class="text-container">
-            <div class="textbox1"><h1>2</h1>
-        <p>Independent motors digitally control
-torque to the front and rear wheels</p></div>
-            <div class="textbox2"><h1>10 ms</h1><p>Dual motors respond to changing 
-conditions in as little as 10 milliseconds</p></div>
-            <div class="textbox3"><h1>icon</h1><p>Unparalleled traction and control, in all 
-weather conditions</p></div>
+        </div>
+        <div class="container1">
+            <div class="container2">
+                <div class="subcontainer2">
+                    <div class="container3">
+                        <div class="heading">
+                            <h3>Performance</h3>
+                            <h1>Quickest Acceleration</h1>
+                        </div>
+                        <div class="text-footer">
+                            <div class="learn-btn">
+                                <div class="round-el"><svg id="tcl-icon-plus--small" viewBox="0 0 30 30"
+                                        xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                                        <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                                            <line x1="15" y1="10" x2="15" y2="20"></line>
+                                            <line x1="10" y1="15" x2="20" y2="15"></line>
+                                        </g>
+                                    </svg></div> Learn More
+                            </div>
+                            <div class="btn-dark"><a href="#">
+                                    <div>Order Now</div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="container4">
+                        <div>Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and
+                            Performance Brakes for total control in all weather conditions. A carbon fiber spoiler
+                            improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as
+                            little as 3.1 seconds.</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container1">
-        <div class="container2">
-            <div class="container3"><div class="heading"><h3>All-Wheel Drive</h3><h1>Dual Motor</h1>
 
-                <div class="btn-dark"></div>
-            </div></div>
-            <div class="container4"><p>Tesla All-Wheel Drive has two independent motors for improved redundancy, each with only one moving part for minimal maintenance and maximum durability. Unlike traditional all-wheel drive systems, they digitally control torque to the front and rear wheels for far better handling and traction control.</p></div>
+    <div id="section4" class="genericsec">
+        <div class="bluepic">
+            <div class="text-container">
+                <div class="textbox1">
+                    <h1>2</h1>
+                    <p>Independent motors digitally control
+torque to the front and rear wheels
+                    </p>
+                </div>
+                <div class="textbox2">
+                    <h1>10 ms</h1>
+                    <p>Dual motors respond to changing conditions
+    in as little as 10 milliseconds</p>
+                </div>
+                <div class="textbox3">
+                    <h1>icon</h1>
+                    <p>Unparalleled traction and control, in all
+weather conditions</p>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="container2">
+                <div class="subcontainer2">
+                    <div class="container3">
+                        <div class="heading">
+                            <h3>All-Wheel Drive</h3>
+                            <h1>Dual Motor</h1>
+                        </div>
+                        <div class="text-footer">
+                            <div class="btn-dark"><a href="#">
+                                    <div>Order Now</div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="container4">
+                        <div>Tesla All-Wheel Drive has two independent motors for improved redundancy, each with only
+                            one moving part for minimal maintenance and maximum durability. Unlike traditional all-wheel
+                            drive systems, they digitally control torque to the front and rear wheels for far better
+                            handling and traction control.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-</div>
+   <div class="sidebar-container">
+        <ul class="side-navbar">
+          <li class="side-navbar-item" tooltip="MODEL 3"><a href="#header" class="link-item"></a></li>
+          <li class="side-navbar-item" tooltip="SAFETY"><a href="#section2" class="link-item"></a></li>
+          <li class="side-navbar-item" tooltip="PREFORMANCE"><a href="#section3" class="link-item"></a></li>
+          <li class="side-navbar-item" tooltip="Wheel Drive"><a href=#section4 class="link-item"></a></li>
+        </ul>
 
+   </div>
 </body>
 
 </html>
